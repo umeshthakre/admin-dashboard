@@ -11,7 +11,7 @@ import { useAuth } from '../helper/AuthContext';
 const menuItems = [
   { text: 'Overview', icon: <DashboardIcon />, path: '/' },
   { text: 'Reports', icon: <BarChartIcon />, path: '/reports' },
-  { text: 'Users', icon: <AnalyticsIcon />, path: '/analytics' },
+  { text: 'Users', icon: <AnalyticsIcon />, path: '/users' },
   { text: 'Settings', icon: <SettingsIcon />, path: '/settings' },
 ];
 

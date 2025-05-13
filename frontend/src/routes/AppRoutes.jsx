@@ -13,17 +13,17 @@ import ProtectedRoute from '../components/ProtectedRoute';
 const AppRoutes = () => (
   <>
     <Routes>
-      {/* Public routes */}
+      
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
 
-      {/* Protected routes */}
+      
       <Route element={<ProtectedRoute />}>
         <Route element={<DashboardLayout />}>
 
           <Route path="/" element={<Overview />} />
           <Route path="reports" element={<Reports />} />
-          <Route path="analytics" element={<Analytics />} />
+          <Route path="users" element={<Analytics />} />
           <Route path="settings" element={<Settings />} />
         </Route>
       </Route>
