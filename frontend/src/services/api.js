@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const api = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'https://admin-dashboard-internet-soft-backend.onrender.com/',
     prepareHeaders: (headers, { getState }) => {
       const accessToken = localStorage.getItem('token')
       if (accessToken) {

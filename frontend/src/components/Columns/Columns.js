@@ -75,7 +75,7 @@ export const ReportColumns = [
           } catch (error) {
             console.log("error",error)
             if(error.originalStatus === 429){
-              toast.error("Reached rate limit try again in 1 min");
+              toast.error("Reached rate limit try again in 2 min. All operations are disabled");
             }else{
               toast.error("Failed to update report status");
 

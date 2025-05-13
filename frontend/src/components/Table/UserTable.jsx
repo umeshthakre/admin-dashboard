@@ -45,7 +45,7 @@ const UserTable = ({ columns, data }) => {
 
 
             if(error.originalStatus === 429){
-              toast.error("Reached rate limit try again in 1 min");
+              toast.error("Reached rate limit try again in 2 min. All operations are disabled");
             }
             toast.error(error?.data)
             console.log('error', error)
