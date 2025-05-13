@@ -40,4 +40,42 @@ This repository contains a full-stack admin dashboard built with **React.js**, *
 ---
 
 ## 📁 Project Structure
+├── backend/
+│ ├── src/
+│ │ ├── controllers/
+│ │ ├── middleware/
+│ │ ├── models/
+│ │ ├── routes/
+│ │ ├── config/
+│ │ └── app.js
+│ ├── .env
+│ └── package.json
+├── frontend/
+│ ├── public/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── routes/
+│ │ ├── services/
+│ │ └── App.js
+│ ├── .env
+│ └── package.json
+
+
+---
+
+## ⚙️ Installation & Running Locally
+
+### 🔧 Prerequisites
+- Node.js & npm
+- MongoDB instance (local or cloud)
+- Firebase project for authentication
+
+### 📦 Backend
+```bash
+cd backend
+npm install
+npm run dev
+
+
 
