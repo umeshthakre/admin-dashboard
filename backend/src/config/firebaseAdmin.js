@@ -1,9 +1,10 @@
 import admin from 'firebase-admin';
-import { Buffer } from 'buffer';
+import dotenv from 'dotenv';
 
-const serviceAccount = JSON.parse(
-  Buffer.from(process.env.FIREBASE_SERVICE_ACCOUNT_BASE64, 'base64').toString('utf8')
-);
+// Load environment variables from .env file
+dotenv.config();
+
+const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_JSON);
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
